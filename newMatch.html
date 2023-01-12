@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Match Registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<style>
+    body
+    {
+        background: rgb(155,222,215);
+        background: linear-gradient(90deg, rgba(155,222,215,0.7455357142857143) 0%, rgba(70,122,210,0.8015581232492998) 29%, rgba(149,0,255,0.7287289915966386) 100%);
+    }
+</style>
+<body>
+    <div class="full">
+        <a class="logo" href="home.html"><img src="images/logo.png" alt="#" /></a>
+    </div>
+    <div class="container">
+        <div class="row col-md-6 col-md-offset-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading text-center">
+                    <h1>New Match Registration</h1>
+                </div>
+                <div class="panel-body">
+                    <form action="connectMatch.php" method="post">
+                        <div class="form-group">
+                            <label for="matchID">Match ID</label>
+                            <input type="text" class="form-control" name="matchID" id="matchID">
+                        </div>
+                        <div class="form-group">
+                            <label for="umpireID">Umpire ID</label>
+                            <input type="text" class="form-control" name="umpireID" id="umpireID">
+                        </div>
+                        <div class="form-group">
+                            <label for="venue">Match Venue</label>
+                            <input type="text" class="form-control" name="venue" id="venue">
+                        </div>
+
+                        <div class="form-group">
+                            <table>
+                                <td>
+                                    <label for="teamA">Team A</label>
+                                    <br>
+                                        <select name="teamA" id="teamA">
+                                            <option value="1">Australia</option>
+                                            <option value="2">Bangladesh</option>
+                                            <option value="3">India</option>
+                                            <option value="4">England</option>
+                                            <option value="5">New Zealand</option>
+                                            <option value="6">Pakistan</option>
+                                            <option value="7">South Africa</option>
+                                            <option value="8">Sri Lanka</option>
+                                            <option value="9">West Indies</option>
+                                            <option value="10">Zimbabwe</option>
+                                        </select>
+                                </td>
+
+                                <td>
+                                    <label for="teamB">Team B</label>
+                                    <br>
+                                        <select name="teamB" id="teamB">
+                                            <option value="1">Australia</option>
+                                            <option value="2">Bangladesh</option>
+                                            <option value="3">India</option>
+                                            <option value="4">England</option>
+                                            <option value="5">New Zealand</option>
+                                            <option value="6">Pakistan</option>
+                                            <option value="7">South Africa</option>
+                                            <option value="8">Sri Lanka</option>
+                                            <option value="9">West Indies</option>
+                                            <option value="10">Zimbabwe</option>
+                                        </select>
+                                </td>
+                            </table>
+                        </div>
+                        <div class="form-group">
+                            <label for="winnerID">Match Winner</label>
+                                    <br>
+                                        <select name="winnerID" id="winnerID">
+                                            <option value="1">Australia</option>
+                                            <option value="2">Bangladesh</option>
+                                            <option value="3">India</option>
+                                            <option value="4">England</option>
+                                            <option value="5">New Zealand</option>
+                                            <option value="6">Pakistan</option>
+                                            <option value="7">South Africa</option>
+                                            <option value="8">Sri Lanka</option>
+                                            <option value="9">West Indies</option>
+                                            <option value="10">Zimbabwe</option>
+                                        </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="matchDate">Match Date</label>
+                            <input type="date" class="form-control" name="matchDate" id="matchDate">
+                        </div>                    
+                        <input type="submit" class="btn btn-primary">
+                        <p align="right">    
+                            <a class='btn btn-primary btn-xl' href='adminRedirect.html'>Return to Menu</a>
+                        </p>
+                        <p align="right">
+                            <input type="button" value="Log Out" onclick="window.location.href='loginPage.html'"/>
+                        </p>
+                    </form>
+                </div>
+                
+                <div class="panel-footer text-right">
+                    <small>&copy; 77and89</small>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

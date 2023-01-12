@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<style>
+    body
+    {
+        background: rgb(155,222,215);
+        background: linear-gradient(90deg, rgba(155,222,215,0.7455357142857143) 0%, rgba(70,122,210,0.8015581232492998) 29%, rgba(149,0,255,0.7287289915966386) 100%);
+    }
+</style>
+<body>    
+    <div class="full">
+        <a class="logo" href="home.html"><img src="images/logo.png" alt="#" /></a>
+    </div>
+    <div class="container">
+        <div class="row col-md-6 col-md-offset-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading text-center">
+                    <h1>Login Page</h1>
+                </div>
+                <div class="panel-body">
+                    <form action="connLogin.php" method="post">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" name="username">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="text" class="form-control" id="password" name="password">
+                        </div>
+                        <input type="submit" class="btn btn-primary">
+                        <div class="panel-body text-center">
+                            <a href="newUser.html">Create New User</button></a>
+                        </div>
+                    </form>
+                </div>
+                <div class="panel-footer text-right">
+                    <small>&copy; 77and89</small>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
